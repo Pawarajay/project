@@ -408,39 +408,43 @@ export default function HomePage() {
 
 
 
-<section className="py-8 sm:py-14 md:py-16 px-3 sm:px-6 bg-gradient-to-br from-white via-green-50 to-green-100 relative overflow-hidden">
-  <div className="container mx-auto relative z-10">
+
+
+
+
+<section className="py-8 sm:py-14 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-white via-green-50 to-green-100 relative overflow-hidden">
+  <div className="container mx-auto max-w-full px-4 sm:px-6 relative z-10">
     {/* Header */}
-    <div className="text-center mb-8 sm:mb-12">
-      <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent mb-4">
+    <div className="text-center mb-8 sm:mb-12 px-2 sm:px-0">
+      <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent mb-4 break-words">
         Pre-requisites for WhatsApp Business API Setup
       </h2>
-      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed break-words">
         Make sure you have these essentials ready before starting your WhatsApp Business API journey.
       </p>
     </div>
 
     {/* Card */}
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto px-2 sm:px-0">
       <Card className="border-0 shadow-xl rounded-3xl bg-white/80 backdrop-blur-sm p-5 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl">
         {/* Steps Header */}
         <CardHeader className="pb-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-center text-center sm:text-left">
-              <div className="flex items-center gap-3">
-                <div className="rounded-full bg-green-100 w-10 h-10 flex items-center justify-center shadow-inner">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-between gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 items-center text-center sm:text-left">
+              <div className="flex items-center gap-3 min-w-[220px] sm:min-w-0 break-words">
+                <div className="rounded-full bg-green-100 w-10 h-10 flex items-center justify-center shadow-inner shrink-0">
                   <ArrowRight className="w-5 h-5 text-green-600" />
                 </div>
-                <span className="text-green-700 font-semibold text-base sm:text-lg">
+                <span className="text-green-700 font-semibold text-base sm:text-lg break-words">
                   Our Team Will Connect Your Number
                 </span>
               </div>
               <div className="hidden sm:block h-6 w-px bg-green-300" />
-              <div className="flex items-center gap-3">
-                <div className="rounded-full bg-green-100 w-10 h-10 flex items-center justify-center shadow-inner">
+              <div className="flex items-center gap-3 min-w-[120px] sm:min-w-0 break-words">
+                <div className="rounded-full bg-green-100 w-10 h-10 flex items-center justify-center shadow-inner shrink-0">
                   <ArrowRight className="w-5 h-5 text-green-600" />
                 </div>
-                <span className="text-green-700 font-semibold text-base sm:text-lg">
+                <span className="text-green-700 font-semibold text-base sm:text-lg break-words">
                   Start Campaign
                 </span>
               </div>
@@ -475,7 +479,7 @@ export default function HomePage() {
             ].map((item, i) => (
               <li
                 key={i}
-                className="flex items-start gap-4 group hover:bg-green-50 rounded-xl p-2 sm:p-3 transition-all duration-200"
+                className="flex flex-col sm:flex-row items-start gap-4 group hover:bg-green-50 rounded-xl p-2 sm:p-3 transition-all duration-200 break-words"
               >
                 <span className="flex-shrink-0 rounded-full bg-green-100 border border-green-300 w-8 h-8 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Check className="w-4 h-4 text-green-700" />
@@ -495,6 +499,7 @@ export default function HomePage() {
   <div className="absolute top-0 left-0 w-32 h-32 bg-green-200 rounded-full blur-3xl opacity-40 -z-10 animate-pulse"></div>
   <div className="absolute bottom-0 right-0 w-40 h-40 bg-green-300 rounded-full blur-3xl opacity-30 -z-10 animate-pulse"></div>
 </section>
+
 
 
       {/* WhatsApp Services Pricing (Get Started Card) */}
