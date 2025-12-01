@@ -226,8 +226,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50">
       {/* Hero Section with Slider */}
-      <section className="pt-20 md:pt-24 pb-8 md:pb-12 px-4">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section className="pt-20 md:pt-24 pb-8 md:pb-12 px-2 sm:px-4">
+        <div className="container mx-auto px-0 sm:px-2 md:px-4 lg:px-6 max-w-7xl">
           <ServicesSlider />
         </div>
       </section>
