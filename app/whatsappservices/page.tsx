@@ -23,6 +23,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ClipboardList, Phone } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import WhatsAppButton from "@/components/whatsapp-button"
@@ -401,108 +402,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Pre-requisites Section (Styled Like Other Cards, More Compact + Responsive) */}
-     
 
 
-
-
-
-
-
-
-
-<section className="py-8 sm:py-14 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-white via-green-50 to-green-100 relative overflow-hidden">
-  <div className="container mx-auto max-w-full px-4 sm:px-6 relative z-10">
-    {/* Header */}
-    <div className="text-center mb-8 sm:mb-12 px-2 sm:px-0">
-      <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent mb-4 break-words">
-        Pre-requisites for WhatsApp Business API Setup
-      </h2>
-      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed break-words">
-        Make sure you have these essentials ready before starting your WhatsApp Business API journey.
-      </p>
-    </div>
-
-    {/* Card */}
-    <div className="max-w-3xl mx-auto px-2 sm:px-0">
-      <Card className="border-0 shadow-xl rounded-3xl bg-white/80 backdrop-blur-sm p-5 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl">
-        {/* Steps Header */}
-        <CardHeader className="pb-6">
-          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-between gap-4 sm:gap-6">
-            <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 items-center text-center sm:text-left">
-              <div className="flex items-center gap-3 min-w-[220px] sm:min-w-0 break-words">
-                <div className="rounded-full bg-green-100 w-10 h-10 flex items-center justify-center shadow-inner shrink-0">
-                  <ArrowRight className="w-5 h-5 text-green-600" />
-                </div>
-                <span className="text-green-700 font-semibold text-base sm:text-lg break-words">
-                  Our Team Will Connect Your Number
-                </span>
-              </div>
-              <div className="hidden sm:block h-6 w-px bg-green-300" />
-              <div className="flex items-center gap-3 min-w-[120px] sm:min-w-0 break-words">
-                <div className="rounded-full bg-green-100 w-10 h-10 flex items-center justify-center shadow-inner shrink-0">
-                  <ArrowRight className="w-5 h-5 text-green-600" />
-                </div>
-                <span className="text-green-700 font-semibold text-base sm:text-lg break-words">
-                  Start Campaign
-                </span>
-              </div>
-            </div>
-          </div>
-        </CardHeader>
-
-        {/* List Content */}
-        <CardContent>
-          <ul className="mt-2 space-y-4 sm:space-y-5 text-gray-800 text-sm sm:text-base leading-relaxed">
-            {[
-              {
-                title: "Meta Business Manager Account",
-                desc: "with completed business verification (GST, website, address proof)",
-              },
-              {
-                title: "Active Facebook Page",
-                desc: "matching your business name",
-              },
-              {
-                title: "New Phone Number",
-                desc: "not linked to any existing WhatsApp account and able to receive OTP",
-              },
-              {
-                title: "Display Name & Branding",
-                desc: "should match business identity for Meta approval",
-              },
-              {
-                title: "Authorized Contact Details",
-                desc: "name, email, and mobile for account verification",
-              },
-            ].map((item, i) => (
-              <li
-                key={i}
-                className="flex flex-col sm:flex-row items-start gap-4 group hover:bg-green-50 rounded-xl p-2 sm:p-3 transition-all duration-200 break-words"
-              >
-                <span className="flex-shrink-0 rounded-full bg-green-100 border border-green-300 w-8 h-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Check className="w-4 h-4 text-green-700" />
-                </span>
-                <span>
-                  <span className="font-semibold text-green-700">{item.title}:</span> {item.desc}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-      </Card>
-    </div>
-  </div>
-
-  {/* Background accents */}
-  <div className="absolute top-0 left-0 w-32 h-32 bg-green-200 rounded-full blur-3xl opacity-40 -z-10 animate-pulse"></div>
-  <div className="absolute bottom-0 right-0 w-40 h-40 bg-green-300 rounded-full blur-3xl opacity-30 -z-10 animate-pulse"></div>
-</section>
-
-
-
-      {/* WhatsApp Services Pricing (Get Started Card) */}
+           {/* WhatsApp Services Pricing (Get Started Card) */}
       <section className="py-8 px-2 sm:py-16 sm:px-4 md:py-20 md:px-6 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-8 sm:mb-12">
@@ -560,6 +462,108 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Pre-requisites Section (Styled Like Other Cards, More Compact + Responsive) */}
+     
+
+
+
+
+
+
+
+
+
+<section className="py-8 sm:py-14 md:py-16 px-4 sm:px-6 bg-gradient-to-br from-white via-green-50 to-green-100 relative overflow-hidden">
+  <div className="container mx-auto max-w-full px-4 sm:px-6 relative z-10">
+
+    {/* Header */}
+    <div className="text-center mb-8 sm:mb-12 px-2 sm:px-0">
+      <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent mb-4">
+        Pre-requisites for WhatsApp Business API Setup
+      </h2>
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Make sure you have these essentials ready before starting your WhatsApp Business API journey.
+      </p>
+    </div>
+
+    {/* FIRST CARD (Full Width Requirements Card) */}
+  
+
+    {/* THREE FEATURE CARDS */}
+    <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-2">
+
+      {/* Card 1 */}
+      <Card className="min-h-[330px] sm:min-h-[360px] md:min-h-[380px] border-0 shadow-xl rounded-3xl bg-white/90 backdrop-blur-sm p-6 flex flex-col transition-all hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02]">
+        <CardHeader>
+            {/* <h4>Step 1</h4> */}
+          <div className="flex items-center gap-3">
+            <div className="rounded-full bg-green-100 w-12 h-12 flex items-center justify-center">
+              <ClipboardList className="w-6 h-6 text-green-700" />
+            </div>
+            <h3 className="text-green-700 font-semibold text-lg">Requirements</h3>
+          </div>
+        </CardHeader>
+
+        <CardContent className="flex-1">
+          <ul className="mt-3 space-y-4 text-gray-800 text-sm sm:text-base">
+            {[
+              "Meta Business Manager Account",
+              "Active Facebook Page",
+              "New Phone Number",
+              "Display Name & Branding",
+              "Authorized Contact Details",
+            ].map((item, i) => (
+              <li
+                key={i}
+                className="flex gap-3 items-center text-gray-700"
+              >
+                <Check className="w-4 h-4 text-green-600" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+
+      {/* Card 2 */}
+      <Card className="min-h-[330px] sm:min-h-[360px] md:min-h-[380px] border-0 shadow-xl rounded-3xl bg-white/90 backdrop-blur-sm p-6 flex flex-col items-center justify-center text-center transition-all hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02]">
+       {/* <h4>Step 2</h4> */}
+        <div className="flex flex-col items-center gap-4">
+          <div className="rounded-full bg-blue-100 w-14 h-14 flex items-center justify-center shadow-inner">
+            <Phone className="w-7 h-7 text-blue-700" />
+          </div>
+          <span className="text-blue-700 font-semibold text-xl">
+            Our Team Will Connect Your Number
+          </span>
+        </div>
+      </Card>
+
+      {/* Card 3 */}
+      <Card className="min-h-[330px] sm:min-h-[360px] md:min-h-[380px] border-0 shadow-xl rounded-3xl bg-white/90 backdrop-blur-sm p-6 flex flex-col items-center justify-center text-center transition-all hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02]">
+        <div className="flex flex-col items-center gap-4">
+          <div className="rounded-full bg-purple-100 w-14 h-14 flex items-center justify-center shadow-inner">
+            <Rocket className="w-7 h-7 text-purple-700" />
+          </div>
+          <span className="text-purple-700 font-semibold text-xl">
+            Start Campaign
+          </span>
+        </div>
+      </Card>
+
+    </div>
+
+  </div>
+
+  {/* Background accents */}
+  <div className="absolute top-0 left-0 w-32 h-32 bg-green-200 rounded-full blur-3xl opacity-40 -z-10 animate-pulse"></div>
+  <div className="absolute bottom-0 right-0 w-40 h-40 bg-green-300 rounded-full blur-3xl opacity-30 -z-10 animate-pulse"></div>
+</section>
+
+
+
+
+ 
 
       {/* CTA Section */}
       <section className="py-10 px-2 sm:py-16 sm:px-4 md:py-20 md:px-6 bg-green-500">
